@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Form Bakal Calon Legislatif</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/signin.css">
+    <link rel="stylesheet" href="assets/css/navigation.css">
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bs-stepper/dist/css/bs-stepper.min.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    
+
+  </head>
+  <body class="d-block">
+    <main role="main" class="container">
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="d-flex flex-xl-row flex-lg-row flex-md-row flex-sm-column flex-column justify-content-center align-items-center">
+                    <img src="assets/images/logo.png" alt="Logo" class="mr-2" style="width:80px;"/>
+                    <p class="mb-2 headline5 font-weight-bold text-center">PARTAI PERSATUAN PEMBANGUNAN </br> PROVINSI BENGKULU</p>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center my-4">
+            <div class="col-xl-8 col-lg-7 col-md-7 col-sm-12 col-12 py-3 d-flex flex-row justify-content-center align-items-center">
+                <div class="container-people p-2 mx-2 d-flex flex-column justify-content-center align-items-center" style="max-width: 220px;">
+                    <img src="assets/images/ketua.png" alt="ketua" class="" style="width:100%;"/>
+                    <p class="headline6 semibold text-center p-0 m-0 mt-2">Yusup Apandi, S.Kom.</p>
+                    <p class="bodytext2 text-center p-0 m-0 mb-2">Ketua</p>
+                </div>
+
+                <div class="container-people p-2 mx-2 d-flex flex-column justify-content-center align-items-center" style="max-width: 220px;">
+                    <img src="assets/images/sekretaris.png" alt="ketua" class="" style="width:100%;"/>
+                    <p class="headline6 semibold text-center p-0 m-0 mt-2">Eko Haryadi, M.T.</p>
+                    <p class="bodytext2 text-center p-0 m-0 mb-2">Sekretaris</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 col-md-5 col-sm-12 col-12">
+                <form class="form-signin text-center" style="max-width: 440px;">
+                    <p class="mb-2 headline6 semibold">Form Bakal Calon Legislatif</p>
+                    <!-- <p class="mb-3 bodytext2">ISI DATA DI BAWAH</p> -->
+
+                    <div id="stepper1" class="bs-stepper linear">
+                        <!-- Start Tab Stepper -->
+                        <div class="bs-stepper-header" role="tablist">
+                          <div class="step active" data-target="#test-l-1">
+                            <button type="button" class="step-trigger" role="tab" id="stepper1trigger1" aria-controls="test-l-1" aria-selected="true">
+                              <span class="bs-stepper-circle">1</span>
+                              <span class="bs-stepper-label">Informasi</span>
+                            </button>
+                          </div>
+                          <div class="bs-stepper-line"></div>
+                          <div class="step" data-target="#test-l-2">
+                            <button type="button" class="step-trigger" role="tab" id="stepper1trigger2" aria-controls="test-l-2" aria-selected="false" disabled="disabled">
+                              <span class="bs-stepper-circle">2</span>
+                              <span class="bs-stepper-label">Akun</span>
+                            </button>
+                          </div>
+                        </div>
+                        <!-- End Tab Stepper -->
+                        <!-- Start Content Stepper -->
+                        <div class="bs-stepper-content px-0">
+                            <div id="test-l-1" role="tabpanel" class="bs-stepper-pane active" aria-labelledby="stepper1trigger1">
+                                <div class="input-group-custom">
+                                    <i class="fi fi-rr-user color-black400"></i>
+                                    <input type="text" name="name" id="inputName" class="form-input bodytext2" placeholder="Nama Lengkap" required>
+                                </div>
+                        
+                                <div class="input-group-custom mt-3">
+                                    <i class="fi fi-rr-id-badge color-black400"></i>
+                                    <input type="number" name="id" id="inputID" maxlength="16" class="form-input bodytext2" placeholder="NIK (Nomor Induk Kependudukan)" required>
+                                </div>
+                        
+                                <div class="input-group-custom mt-3">
+                                    <i class="fi fi-rr-map-marker color-black400"></i>
+                                    <input type="text" name="address" id="inputAddress" maxlength="100" class="form-input bodytext2" placeholder="Alamat" required>
+                                </div>
+                        
+                                <div class="input-group-custom mt-3">
+                                    <i class="fi fi-rr-briefcase color-black400"></i>
+                                    <input type="text" name="job" id="inputJob" class="form-input bodytext2" placeholder="Pekerjaan" required>
+                                </div>
+                        
+                                <div class="input-group-custom-select mt-3">
+                                    <i class="fi fi-rr-graduation-cap color-black400"></i>
+                                    <select class="form-input form-select bodytext2">
+                                        <option>Pilih Pendidikan Terakhir</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                        
+                                <div class="input-group-custom-select mt-3">
+                                    <i class="fi fi-rr-school color-black400"></i>
+                                    <select class="form-input form-select bodytext2">
+                                        <option>Pilih Wilayah Dapil</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                        
+                                <div class="input-group-custom-select mt-3">
+                                    <i class="fi fi-rr-school color-black400"></i>
+                                    <select class="form-input form-select bodytext2">
+                                        <option>Pilih Dapil</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                                <button onclick="stepper1.next()" class="mt-3 btn btn-lg btn-block button-primary bodytext2" type="button" id="buttonLogin">Selanjutnya</button>
+                            </div>
+                            <div id="test-l-2" role="tabpanel" class="bs-stepper-pane" aria-labelledby="stepper1trigger2">
+                                <div class="input-group-custom mt-3">
+                                    <i class="fi fi-rr-at color-black400"></i>
+                                    <input type="text" name="username" id="inputUsername" class="form-input bodytext2" placeholder="Username" required>
+                                </div>
+                                <div class="input-group-custom mt-3">
+                                    <i class="fi fi-rr-lock color-black400"></i>
+                                    <input type="password" name="password" id="inputPassword" class="form-input bodytext2" placeholder="Kata Sandi" required>
+                                </div>
+                                <div class="input-group-custom mt-3">
+                                    <i class="fi fi-rr-lock color-black400"></i>
+                                    <input type="password" name="passwordConfirm" id="inputPasswordConfirm" class="form-input bodytext2" placeholder="Ulang Kata Sandi" required>
+                                </div>
+
+                                <div class="d-flex flex-row justify-content-between">
+                                    <button class="mt-3 mr-1 btn btn-lg btn-block button-request-finish bodytext2 color-green500" type="button" id="buttonLogin" onclick="stepper1.previous()">Kembali</button>
+                                    <button class="mt-3 ml-1 btn btn-lg btn-block button-primary bodytext2" type="button" id="buttonLogin">Kirim</button>
+                                </div>
+                        
+                                
+                                
+                            </div>
+                        </div>
+                        <!-- End Content Stepper -->
+                    
+                </form>
+            </div>
+        </div>
+
+        
+    </main>
+   
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs-stepper/dist/js/bs-stepper.min.js"></script>
+
+    <script>
+        var stepper1 = new Stepper(document.querySelector('#stepper1'))
+    </script>
+
+  </body>
+</html>
