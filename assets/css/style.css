@@ -2,15 +2,15 @@ body {
 	background-color: #fafafa;
 }
 .color-primary {
-	color: #32a02d !important;
+	color: #006808 !important;
 }
 
 .background-primary {
-	background-color: #32a02d !important;
+	background-color: #006808 !important;
 }
 
 .button-primary {
-	background-color: #32a02d !important;
+	background-color: #006808 !important;
 	color: #ffffff !important;
 	border-radius: 8px !important;
 	min-height: 48px;
@@ -106,7 +106,7 @@ input.middle:focus {
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
 	width: 20px !important;
-	background-color: #32a02d;
+	background-color: #006808;
 }
 
 .swiper-pagination-bullet {
@@ -264,7 +264,7 @@ input.middle:focus {
 
 /* start custom search component */
 .button-search {
-	background-color: #32a02d !important;
+	background-color: #006808 !important;
 	color: #ffffff !important;
 	border-radius: 12px !important;
 	min-height: 48px;
@@ -308,7 +308,7 @@ input.middle:focus {
 	scrollbar-width: none;
 }
 .brand-slide.active {
-	background: #32a02d !important;
+	background: #006808 !important;
 }
 .container-brand-text a {
 	display: inline-block;
@@ -377,7 +377,7 @@ input.middle:focus {
 }
 
 .container-menu-tab .menu-tab-item.active {
-	background-color: #32a02d;
+	background-color: #006808;
 	border: none;
 	color: #fff;
 	padding-left: 20px;
@@ -405,7 +405,7 @@ input.middle:focus {
 }
 
 .button-action-filter-reset {
-	border: solid 2px #32a02d;
+	border: solid 2px #006808;
 }
 
 .select-item:hover {
@@ -720,7 +720,7 @@ input.middle:focus {
 
 .payment-status-2 {
 	background-color: #d6ecd5;
-	color: #32a02d;
+	color: #006808;
 	border-radius: 4px;
 	padding: 2px 4px;
 }
@@ -795,7 +795,7 @@ input.middle:focus {
 	width: 24px;
 	height: 24px;
 	right: -17px;
-	background-color: #32a02d;
+	background-color: #006808;
 	top: 1px;
 	border-radius: 50%;
 	z-index: 1;
@@ -805,7 +805,7 @@ input.middle:focus {
 	content: "";
 	position: absolute;
 	width: 3px;
-	background-color: #32a02d;
+	background-color: #006808;
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -969,5 +969,7 @@ input.middle:focus {
 }
 
 .active .bs-stepper-circle {
-	background-color: #32a02d !important;
+	background-color: #006808 !important;
+	/* #006808 */
+	/* #006808 */
 }
