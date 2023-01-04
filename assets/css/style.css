@@ -56,7 +56,7 @@ input.middle:focus {
 .container-people {
 	background-color: #fff;
 	border-radius: 8px !important;
-	box-shadow: 0px 0px 10px 3px #e8e8e8;
+	box-shadow: 0px 0px 10px 3px #00000014;
 }
 .input-group-custom-select {
 	background-color: #f7f7fa;
